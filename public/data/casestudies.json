@@ -1,0 +1,87 @@
+[
+  {
+    "id": "section1",
+    "title": "SEO Ecommerce",
+    "introduction": "SEO Ecommerce is an impressive website built using Next.js, Tailwind, NextAuth, MongoDB, Stripe, Node.js, and Cypress. The project incorporates various advanced techniques, including Server-Side Rendering, Caching, Schemas, React Contexts, useMemos, and OAuth. Every decision made during the development process was focused on adhering to SEO best practices. With its powerful tech stack and dedication to search engine optimization.",
+    
+    "description": "This website is built using Next JS, Tailwind, NextAuth, MongoDB, Stripe, Node Js, and Cypress. Some of the tech techniques used are Server-Side Rendering, Caching, Schemas, React Contexts, useMemos, and OAuth. All choices of this project were made to adhere to SEO.",
+    "links": [
+      {
+        "label": "Application",
+        "url": "github-url"
+      },
+      {
+        "label": "Demo",
+        "url": "demo-url"
+      },
+      {
+        "label": "Source Code",
+        "url": "source-code-url"
+      }
+    ],
+    "tech": [
+      "Nextjs",
+      "TailwindCSS",
+      "Cypress",
+      "MongoDB",
+      "Stripe",
+      "HTML5",
+      "CSS3"
+    ]
+  },
+  {
+    "id": "section2",
+    "title": "Film Database Management System",
+    "description": "A Film Database Management System that enables the software administrator to manage the database and provide features such as adding new films, deleting, updating, and searching for films by title, year, and actor. The backend is developed in JAVA, and the front-end for Restful is developed in React, Axios, Tailwind, Sass.",
+    "links": [
+      {
+        "label": "Application",
+        "url": "github-url"
+      },
+      {
+        "label": "Demo",
+        "url": "demo-url"
+      },
+      {
+        "label": "Source Code",
+        "url": "source-code-url"
+      }
+    ],
+    "tech": [
+      "Java",
+      "React",
+      "TailwindCSS",
+      "Sass",
+      "HTML5",
+      "CSS3"
+    ]
+  },
+  {
+    "id": "section3",
+    "title": "Heart Database Management and Visualization",
+    "description": "This is a collaborative project developed to facilitate research in the field of Cardiomyopathies. It is built using HTML, CSS, JavaScript, Vue, Firebase, Chart Js, and API Integrations.",
+    "links": [
+      {
+        "label": "Application",
+        "url": "github-url"
+      },
+      {
+        "label": "Demo",
+        "url": "demo-url"
+      },
+      {
+        "label": "Source Code",
+        "url": "source-code-url"
+      }
+    ],
+    "tech": [
+      "Vue",
+      "TailwindCSS",
+      "Firebase",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Chartjs"
+    ]
+  }
+]
