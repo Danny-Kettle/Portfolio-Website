@@ -13,7 +13,7 @@ const DataContextProvider = ({ children }) => {
       }
     };
 
-    fetch("/data/casestudies.json")
+    fetch("/Portfolio-Website/data/casestudies.json")
       .then((response) => response.json())
       .then((jsonData) => {
         setData(jsonData);

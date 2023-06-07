@@ -12,27 +12,27 @@ import React, { useEffect, useState } from "react";
 const Home = () => {
   const navigate = useNavigate();
 
-  const handleClick = (id, e) => {
-    e.preventDefault();
-    e.stopPropagation();
+  const handleUpcomingClick = (id, event) => {
+    
     navigate(`/upcoming`);
   };
 
-  useEffect(() => {
-    const handleClick = (event) => {
-      if (event.target.classList.contains("tech-click")) {
-        event.preventDefault();
-        event.stopPropagation();
-        const referenceElement = document.getElementById("tech-stack");
-        referenceElement.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-    document.addEventListener("click", handleClick);
+  // useEffect(() => {
+  //   const handleClick = (event) => {
+  //     event.preventDefault();
+  //     event.stopPropagation();
+  //     if (event.target.classList.contains("tech-click")) {
+  //       console.log("entered");
+  //       const referenceElement = document.getElementById("tech-stack");
+  //       referenceElement.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
+  //   document.addEventListener("click", handleClick);
 
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("click", handleClick);
+  //   };
+  // }, []);
 
   return (
     <div className="bg-gray-800 pb-20 flex">
@@ -41,7 +41,7 @@ const Home = () => {
           <Hero />
         </div>
         <div id="portfolio" className="z-[99]">
-          <Portfolio handleClick={handleClick} />
+          <Portfolio handleClick={handleUpcomingClick} />
         </div>
         <div id="about">
           <Aboutme />

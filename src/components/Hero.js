@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -8,6 +9,7 @@ import {
 
 const Hero = () => {
   const [envolpeOpen, setEnvolpeOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleHover = () => {
     setEnvolpeOpen(!envolpeOpen);
@@ -29,15 +31,31 @@ const Hero = () => {
           <div>
             <ul className="list-none absolute z-[99] cursor-pointer text-center text-4xl flex flex-row gap-8">
               <li>
-                <FontAwesomeIcon className="shake"
+                <FontAwesomeIcon
+                  onClick={() => {
+                    window.open("https://github.com/Danny-Kettle", "_blank");
+                  }}
+                  className="shake"
                   icon={faGithub}
                 />
               </li>
               <li>
-                <FontAwesomeIcon className="bob" icon={faLinkedin} />
+                <FontAwesomeIcon
+                  className="bob"
+                  onClick={() => {
+                    window.open(
+                      "https://www.linkedin.com/in/danny-kettle-922954195/",
+                      "_blank"
+                    );
+                  }}
+                  icon={faLinkedin}
+                />
               </li>
               <li onMouseEnter={handleHover} onMouseLeave={handleHover}>
                 <FontAwesomeIcon
+                  onClick={() => {
+                    window.open("mailto:danny.kettle@outlook.com", "_blank");
+                  }}
                   icon={envolpeOpen === false ? faEnvelope : faEnvelopeOpen}
                 />
               </li>

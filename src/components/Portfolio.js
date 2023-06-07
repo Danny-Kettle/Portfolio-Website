@@ -5,7 +5,19 @@ import { DataContext } from "./DataContextProvider";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio = ({ handleClick }) => {
-const data = useContext(DataContext);
+  const data = useContext(DataContext);
+
+  const handleLinkClick = (event, url) => {
+    event.stopPropagation(); // Prevents the event from propagating to the parent div
+    console.log("Opening Link");
+    window.open(url, "_blank"); // Opens the link in a new window
+  };
+
+  const handleTechClick = (event) => {
+    event.stopPropagation(); // Prevents the event from propagating to the parent div
+    const referenceElement = document.getElementById("tech-stack");
+    referenceElement.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="pt-40">
@@ -20,7 +32,7 @@ const data = useContext(DataContext);
             <div className="h-[275px] flex flex-row gap-12">
               <div className="flex-1 self-center h-full rounded-xl shadow-2xl">
                 <img
-                  src={`/images/${item.id}.png`}
+                  src={`/Portfolio-Website/images/${item.id}.png`}
                   className="object-cover w-full h-full rounded-xl object-top"
                 />
               </div>
@@ -34,6 +46,7 @@ const data = useContext(DataContext);
                     {item.links.map((link) => (
                       <li key={link.label}>
                         <a
+                          onClick={(e) => handleLinkClick(e, link.url)}
                           className={`font-semibold flex flex-row gap-3 items-center text-${link.color}`}
                         >
                           {link.label}{" "}
@@ -50,10 +63,13 @@ const data = useContext(DataContext);
             </div>
             <ul className="flex flex-row gap-12 mt-auto justify-center h-6">
               {item.tech.map((tech) => (
-                <li key={tech} >
+                <li key={tech}>
                   <img
+                    onClick={(e) => {
+                      handleTechClick(e);
+                    }}
                     className="z-50 h-full object-cover tech tech-click"
-                    src={`/images/${tech.toLowerCase()}.png`}
+                    src={`/Portfolio-Website/images/${tech.toLowerCase()}.png`}
                   />
                 </li>
               ))}
