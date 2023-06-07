@@ -3,20 +3,19 @@
     "id": "section1",
     "title": "SEO Ecommerce",
     "introduction": "SEO Ecommerce is an impressive website built using Next.js, Tailwind, NextAuth, MongoDB, Stripe, Node.js, and Cypress. The project incorporates various advanced techniques, including Server-Side Rendering, Caching, Schemas, React Contexts, useMemos, and OAuth. Every decision made during the development process was focused on adhering to SEO best practices. With its powerful tech stack and dedication to search engine optimization.",
-    
     "description": "This website is built using Next JS, Tailwind, NextAuth, MongoDB, Stripe, Node Js, and Cypress. Some of the tech techniques used are Server-Side Rendering, Caching, Schemas, React Contexts, useMemos, and OAuth. All choices of this project were made to adhere to SEO.",
     "links": [
       {
         "label": "Application",
-        "url": "github-url"
+        "url": "https://danny-kettle.github.io/EcommerceSEO/"
       },
       {
         "label": "Demo",
-        "url": "demo-url"
+        "url": "https://clipchamp.com/watch/YtldbSToWfj?utm_source=share&utm_medium=social&utm_campaign=watch"
       },
       {
         "label": "Source Code",
-        "url": "source-code-url"
+        "url": "https://github.com/Danny-Kettle/EcommerceSEO"
       }
     ],
     "tech": [
@@ -35,26 +34,15 @@
     "description": "A Film Database Management System that enables the software administrator to manage the database and provide features such as adding new films, deleting, updating, and searching for films by title, year, and actor. The backend is developed in JAVA, and the front-end for Restful is developed in React, Axios, Tailwind, Sass.",
     "links": [
       {
-        "label": "Application",
-        "url": "github-url"
-      },
-      {
         "label": "Demo",
-        "url": "demo-url"
+        "url": "https://drive.google.com/uc?id=1x40quY_RX7NaggsWBZ6-mZfPJbYCmPMD&export=download"
       },
       {
         "label": "Source Code",
-        "url": "source-code-url"
+        "url": "https://github.com/Danny-Kettle/Film_Database_Mangement_System"
       }
     ],
-    "tech": [
-      "Java",
-      "React",
-      "TailwindCSS",
-      "Sass",
-      "HTML5",
-      "CSS3"
-    ]
+    "tech": ["Java", "React", "TailwindCSS", "Sass", "HTML5", "CSS3"]
   },
   {
     "id": "section3",
@@ -63,15 +51,15 @@
     "links": [
       {
         "label": "Application",
-        "url": "github-url"
+        "url": "https://cardiomyopathy-ada0f.web.app/"
       },
       {
         "label": "Demo",
-        "url": "demo-url"
+        "url": "https://drive.google.com/file/d/1D5Z7uFIENAEijQRkYshXNJYrsrsnKjQy/view?usp=drive_link"
       },
       {
         "label": "Source Code",
-        "url": "source-code-url"
+        "url": "https://github.com/Danny-Kettle/Cardiomyopathies"
       }
     ],
     "tech": [
