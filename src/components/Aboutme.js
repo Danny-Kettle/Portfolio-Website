@@ -41,7 +41,7 @@ const Aboutme = () => {
             >
               <img
                 className="rounded-xl object-cover w-full h-full"
-                src="/images/coding.gif"
+                src="/Portfolio-Website/images/coding.gif"
               />
             </div>
           </div>
