@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { DataContext } from "./DataContextProvider";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faChrome } from "@fortawesome/free-brands-svg-icons";
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const Portfolio = ({ handleClick }) => {
   const data = useContext(DataContext);
@@ -47,13 +48,25 @@ const Portfolio = ({ handleClick }) => {
                       <li key={link.label}>
                         <a
                           onClick={(e) => handleLinkClick(e, link.url)}
-                          className={`font-semibold flex flex-row gap-3 items-center text-${link.color}`}
+                          className={`font-semibold flex flex-row gap-3 items-center text-${link.color} bob`}
                         >
                           {link.label}{" "}
-                          <FontAwesomeIcon
-                            className="text-xl"
-                            icon={faGithub}
-                          />
+                          {link.label === "Source Code" ? (
+                            <FontAwesomeIcon
+                              className="text-xl"
+                              icon={faGithub}
+                            />
+                          ) : link.label === "Demo" ? (
+                            <FontAwesomeIcon
+                              className="text-xl"
+                              icon={faVideo}
+                            />
+                          ) : link.label === "Application" ? (
+                            <FontAwesomeIcon
+                              className="text-xl"
+                              icon={faChrome}
+                            />
+                          ) : null}
                         </a>
                       </li>
                     ))}
